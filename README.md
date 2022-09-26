@@ -60,7 +60,6 @@ docker run -d -p 80:80 --name webserver nginx
 
 ``` bash
 docker [rm|stop] $(docker ps -a -q)
-
 ```
 
 ## Interacting with Containers
@@ -75,6 +74,26 @@ It's possible run a script:
 
 ``` bash
 docker exec -it <container> command.sh
+```
+
+- Copy files from a container
+
+``` bash
+docker cp <container>:<path> <path>
+```
+
+## Images
+
+- Delete all images
+
+``` bash
+docker rmi $(docker images -q)
+```
+
+- Remove all unused images
+
+``` bash
+docker image prune
 ```
 
 ---
