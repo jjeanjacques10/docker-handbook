@@ -30,6 +30,7 @@ docker-compose -f <file-example> up
 | <p align="center"><img src="https://devtools.com.br/blog/wp-content/uploads/2013/06/MySQL-Logo.wine_.png" alt="mysql" width="130"/></p> | `database` | [mysql-compose.yaml](mysql-compose.yaml) |
 | <p align="center"><img src="https://connectoricons-prod.azureedge.net/releases/v1.0.1597/1.0.1597.3005/amazonsqs/icon.png" alt="sqs" width="80"/></p> | `queue`,`localstack` | [sqs-compose.yaml](sqs-compose.yaml) |
 | <p align="center"><img src="https://miro.medium.com/max/300/0*tp2NggIKEiYbXd7o.png" alt="dynamodb" width="80"/></p> | `database`,`localstack` | [dynamodb-compose.yaml](dynamodb-compose.yaml) |
+| <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZpxLWLXFq5S3_hH5mP9GGhmMuPw0LMJGAMRqODQx5oeLSNNSig8BlQ5gYBXlBE43Od0&usqp=CAU" alt="kafka" width="100"/></p> | `messaging system` | [kafka-compose.yaml](kafka-compose.yaml) |
 
 ## Projects using Docker Compose
 

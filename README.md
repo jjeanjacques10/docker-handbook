@@ -35,6 +35,7 @@
     - Redis
     - SQS
     - DynamoDB
+    - Kafka
 
 ## Useful Commands
 
