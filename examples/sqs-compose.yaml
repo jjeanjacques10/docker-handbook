@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  sqs:
+      container_name: sqs
+      image: localstack/localstack:latest
+      restart: always
+      environment:
+        - AWS_DEFAULT_REGION=us-west-1
+        - EDGE_PORT=4576
+        - SERVICES=sqs
+        - HOSTNAME=localhost
+        - HOSTNAME_EXTERNAL=sqs
+      ports:
+        - '4576:4576'
+      volumes:
+        - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+        - "/var/run/docker.sock:/var/run/docker.sock"
+        #- ./environment/sqs/:/docker-entrypoint-initaws.d/ >> Config it to run the script to create the queue

@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+  dynamodb:
+    container_name: dynamodb
+    image: localstack/localstack:latest
+    restart: always
+    networks:
+      - dynamodb-network
+    environment:
+      - AWS_DEFAULT_REGION=us-west-1
+      - EDGE_PORT=4566
+      - SERVICES=dynamodb
+      - KINESIS_PROVIDER=kinesalite
+      - HOSTNAME=localhost
+      - HOSTNAME_EXTERNAL=dynamodb
+    ports:
+      - '4566:4566'
+    volumes:
+      - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      #- ./environment/dynamodb/:/docker-entrypoint-initaws.d/ >> Config it to run the script to create the table
+  dynamodb-admin:
+    container_name: dynamodb-admin
+    image: aaronshaf/dynamodb-admin
+    ports:
+      - "8001:8001"
+    networks:
+      - dynamodb-network
+    environment:
+      - DYNAMO_ENDPOINT=http://dynamodb:4566
+      - AWS_REGION=us-west-1
+      - AWS_ACCESS_KEY=admin
+      - AWS_SECRET_ACCESS_KEY=admin
+    depends_on:
+      - dynamodb
+
+networks:
+  dynamodb-network:

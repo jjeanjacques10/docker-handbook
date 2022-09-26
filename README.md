@@ -26,6 +26,16 @@
   </a>
 </p>
 
+## Table of Contents
+
+- [Docker Handbook](#docker-handbook)
+  - [Useful commands](#useful-commands)
+  - [Docker-compose examples](./examples/README-DOCKER-COMPOSE.md)
+    - MySQL
+    - Redis
+    - SQS
+    - DynamoDB
+
 ## Useful Commands
 
 - Download an image
@@ -66,3 +76,6 @@ It's possible run a script:
 ``` bash
 docker exec -it <container> command.sh
 ```
+
+---
+Developed by [Jean Jacques Barros](https://github.com/jjeanjacques10)
