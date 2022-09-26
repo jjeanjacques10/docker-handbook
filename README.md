@@ -6,7 +6,7 @@
     <p align="center">
     This is a collection of Docker-related articles and tutorials. It is a work in progress.
       <br />
-      <a href="https://github.com/jjeanjacques10/docker-handbook"><strong>Explore the examples »</strong></a>
+      <a href="https://github.com/jjeanjacques10/docker-handbook/blob/main/examples/README.md"><strong>Explore the examples »</strong></a>
     </p>
 </p>
 
@@ -30,7 +30,7 @@
 
 - [Docker Handbook](#docker-handbook)
   - [Useful commands](#useful-commands)
-  - [Docker-compose examples](./examples/README-DOCKER-COMPOSE.md)
+  - [Docker-compose examples](./examples/README.md)
     - MySQL
     - Redis
     - SQS
