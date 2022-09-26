@@ -30,3 +30,9 @@ docker-compose -f <file-example> up
 | <p align="center"><img src="https://devtools.com.br/blog/wp-content/uploads/2013/06/MySQL-Logo.wine_.png" alt="mysql" width="130"/></p> | `database` | [mysql-compose.yaml](mysql-compose.yaml) |
 | <p align="center"><img src="https://connectoricons-prod.azureedge.net/releases/v1.0.1597/1.0.1597.3005/amazonsqs/icon.png" alt="sqs" width="80"/></p> | `queue`,`localstack` | [sqs-compose.yaml](sqs-compose.yaml) |
 | <p align="center"><img src="https://miro.medium.com/max/300/0*tp2NggIKEiYbXd7o.png" alt="dynamodb" width="80"/></p> | `database`,`localstack` | [dynamodb-compose.yaml](dynamodb-compose.yaml) |
+
+## Projects using Docker Compose
+
+- [Twitter Microservices](https://github.com/jjeanjacques10/twitter-microservices)
+- [Hibredu App](https://github.com/hibredu/hibredu-app)
+- [Single Table Design + Spring Boot](https://github.com/jjeanjacques10/spring-dynamodb-single-table-design)
