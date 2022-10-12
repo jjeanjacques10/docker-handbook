@@ -36,6 +36,7 @@
     - SQS
     - DynamoDB
     - Kafka
+    - MongoDB
 
 ## Useful Commands
 
